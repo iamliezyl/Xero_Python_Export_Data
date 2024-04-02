@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+client_id = 'F845C78C95A84CB494734CB86AE88201'
+client_secret = '5CtL7a4v1JGWHzMwnam3QDI6f-ufCIsZS2slhsD8CY8P2GWL'
+redirect_url = 'http://127.0.0.1:5000/callback/'
+scope = 'offline_access accounting.transactions'
+b64_id_secret = base64.b64encode(bytes(client_id + ':' + client_secret, 'utf-8')).decode('utf-8')
+
+{% block content%}   
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Xero Backup Utility</h1>
+            <p>...Backing up Xero</p>           
+    </div>
+{% endblock %}
+
