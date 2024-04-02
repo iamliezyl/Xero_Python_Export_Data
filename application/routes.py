@@ -33,8 +33,8 @@ def xero_backup():
 
     return("TRUE")
 
-client_id = 'F845C78C95A84CB494734CB86AE88201'
-client_secret = 'Qc5M9ItNpRgU2iyMln5qSERxxyvEw0amPpFyo2r52nzACPBH'
+client_id = 'YOUR_CLIENT_ID'
+client_secret = 'YOUR_CLIENT_SECRET'
 redirect_url = 'http://localhost:5000/callback/'
 scope = 'offline_access accounting.transactions accounting.settings.read accounting.budgets.read accounting.contacts'
 b64_id_secret = base64.b64encode(bytes(client_id + ':' + client_secret, 'utf-8')).decode('utf-8')
